@@ -19,8 +19,8 @@ jobs:
       - name: Build Project
         run: npm run build
   deploy:
-  runs-on: uduntu-latest
-  needs: build
+    runs-on: uduntu-latest
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
