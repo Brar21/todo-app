@@ -3,6 +3,8 @@ name: Github Action
 on: 
   push: 
     branches: ["main","master"]
+    # allow us to run workFlow from Ui
+  workflow_dispatch:  
 
 permissions:
   contents: read
