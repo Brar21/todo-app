@@ -2,7 +2,7 @@ name: Github Action
 
 on: 
   push: 
-    branches: ["main","master"]
+    branches: ["main"]
     # allow us to run workFlow from Ui
   workflow_dispatch:  
 
